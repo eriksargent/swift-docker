@@ -6,6 +6,10 @@ RUN export DEBIAN_FRONTEND=noninteractive DEBCONF_NONINTERACTIVE_SEEN=true \
       ca-certificates \
       curl \
       gnupg \
+      libjemalloc-dev \
+      zstd \
+      tzdata \
+      libcurl4 \
     && install -m 0755 -d /etc/apt/keyrings \
     && curl -fsSL https://download.docker.com/linux/ubuntu/gpg -o /tmp/docker.asc \
     && gpg --dearmor -o /etc/apt/keyrings/docker.gpg /tmp/docker.asc \
