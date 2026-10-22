@@ -1,4 +1,4 @@
-FROM swift:6.3-noble
+FROM swift:6.4-noble
 
 RUN export DEBIAN_FRONTEND=noninteractive DEBCONF_NONINTERACTIVE_SEEN=true \
     && apt-get -q update \
